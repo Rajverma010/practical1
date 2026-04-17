@@ -6,15 +6,12 @@ function App() {
     name: '',
     email: '',
     password: '',
+    mobile: '',
+    city: '',
   });
-
-  const handleChange = (event) => {
+   const handleChange = (event) => {
     const { name, value } = event.target;
-
-    setFormData((currentData) => ({
-      ...currentData,
-      [name]: value,
-    }));
+    setFormData((currentData) => ({...currentData,[name]: value,}));
   };
 
   const handleSubmit = (event) => {
@@ -34,15 +31,7 @@ function App() {
         <input id="name" name="name" type="text" value={formData.name} onChange={handleChange} placeholder="Enter your name"  required />
       
         <label htmlFor="Mobile">Mobile</label>
-        <input
-          id="mobile"
-          name="mobile"
-          type="text"
-          value={formData.Mobile}
-          onChange={handleChange}
-          placeholder="Enter your name"
-          required
-        />
+        <input id="mobile" name="mobile" type="text" value={formData.Mobile} onChange={handleChange} placeholder="Enter your name" required />
         <label htmlFor="City">City</label>
         <input
           id="city"

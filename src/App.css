@@ -12,7 +12,50 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+h1{
+   justify-content: center;
+  font-size: calc(20px + 5vmin);
+  color: rgb(2, 3, 3);
+}
+h2{
+  justify-content: center;
+  font-size: calc(15px + 3vmin);
+  color: rgb(2, 3, 3);
+}
+p{
+    justify-content: center;
+  font-size: calc(15px + 3vmin);
+  color: rgb(2, 3, 3);
+}
+label{
 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(2, 3, 3);
+}
+input{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+button{
+padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+  color: aquamarine;
+
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
