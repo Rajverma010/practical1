@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="app-shell">
+    <div>
   
       <form className="login-card" onSubmit={handleSubmit}>
         <h1>Library Subscription</h1>
@@ -29,41 +29,17 @@ function App() {
 
         <label htmlFor="name">Name</label>
         <input id="name" name="name" type="text" value={formData.name} onChange={handleChange} placeholder="Enter your name"  required />
-      
         <label htmlFor="Mobile">Mobile</label>
         <input id="mobile" name="mobile" type="text" value={formData.Mobile} onChange={handleChange} placeholder="Enter your name" required />
         <label htmlFor="City">City</label>
-        <input
-          id="city"
-          name="city"
-          type="text"
-          value={formData.Ciry}
-          onChange={handleChange}
-          placeholder="Enter your name"
-          required
-        />
-
+        <input id="city" name="city" type="text" value={formData.Ciry} onChange={handleChange} placeholder="Enter your name"required/>
         <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="Enter your email"
-          required
-        />
-
+        <input id="email" name="email" type="email" value={formData.email}onChange={handleChange} placeholder="Enter your email"required/>
         <label htmlFor="password">Password</label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          value={formData.password}
-          onChange={handleChange}
-          placeholder="Enter your password"
-          required
-        />
+        <input id="password" name="password" type="password" value={formData.password} onChange={handleChange} placeholder="Enter your password" required/>
+
+         <label htmlFor="password">Password</label>
+        <input id="dob" name="dob" type="date" value={formData.dob} onChange={handleChange} placeholder="Enter your date of birth" required/>
 
         <button type="submit">Login</button>
       </form>
